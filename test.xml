@@ -1,0 +1,32 @@
+<framedata>
+<frame num = "1">
+	<item>
+		<name>TV</name>
+		<x>10</x>
+		<y>15</y>
+		<width>100</width>
+		<height>80</height>
+		<category>electronics</category>
+	</item>
+	<item>
+		<name>handbag</name>
+		<x>100</x>
+		<y>105</y>
+		<width>70</width>
+		<height>80</height>
+		<category>women_accessories</category>
+	</item>
+
+</frame>
+<frame num = "2">
+	<item>
+		<name>iPad</name>
+		<x>10</x>
+		<y>15</y>
+		<width>100</width>
+		<height>80</height>
+		<category>electronics</category>
+	</item>
+
+</frame>
+</framedata>
