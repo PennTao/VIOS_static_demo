@@ -23,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent) :
     canvas->setScene(scene);
 
     xmlparser = new XMLDataParser();
-    xmlparser->loadXML("/home/tao/TestGUI/test.xml");
+    xmlparser->loadXML("/home/tao/VIOS_static_demo/test.xml");
     xmlparser->parseXML();
     canvas->setParser(xmlparser);
 

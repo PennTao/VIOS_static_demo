@@ -1,31 +1,93 @@
 <framedata>
 <frame num = "1">
 	<item>
-		<name>TV</name>
-		<x>10</x>
-		<y>15</y>
-		<width>100</width>
+		<name>EKTORP</name>
+		<x>830</x>
+		<y>550</y>
+		<width>80</width>
 		<height>80</height>
-		<category>electronics</category>
+		<category>life</category>
 	</item>
 	<item>
-		<name>handbag</name>
-		<x>100</x>
-		<y>105</y>
-		<width>70</width>
+		<name>Leslie Dame Cabinet</name>
+		<x>615</x>
+		<y>232</y>
+		<width>80</width>
 		<height>80</height>
-		<category>women_accessories</category>
+		<category>life</category>
 	</item>
 
 </frame>
 <frame num = "2">
 	<item>
-		<name>iPad</name>
-		<x>10</x>
-		<y>15</y>
-		<width>100</width>
+		<name>MORONI HAVANA 614 GROUP</name>
+		<x>1362</x>
+		<y>884</y>
+		<width>80</width>
+		<height>80</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>Tv Test Pattern Sheldon's Shirts T-Shirt</name>
+		<x>706</x>
+		<y>635</y>
+		<width>400</width>
+		<height>300</height>
+		<category>life</category>
+	</item>
+
+</frame>
+<frame num = "3">
+	<item>
+		<name>XBOX 360 Wireless Controller</name>
+		<x>350</x>
+		<y>700</y>
+		<width>180</width>
 		<height>80</height>
 		<category>electronics</category>
+	</item>
+	<item>
+		<name>rubik tissue box</name>
+		<x>240</x>
+		<y>666</y>
+		<width>100</width>
+		<height>110</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>17 Base Pair DNA Model</name>
+		<x>281</x>
+		<y>30</y>
+		<width>240</width>
+		<height>580</height>
+		<category>electronics</category>
+	</item>
+
+</frame>
+<frame num = "4">
+	<item>
+		<name>Thermos Batman Dual Compartment Lunch Kit</name>
+		<x>1650</x>
+		<y>150</y>
+		<width>100</width>
+		<height>100</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>Electromagnetic Spectrum Chart</name>
+		<x>680</x>
+		<y>1</y>
+		<width>220</width>
+		<height>220</height>
+		<category>decoration</category>
+	</item>
+	<item>
+		<name>EKTORP</name>
+		<x>830</x>
+		<y>550</y>
+		<width>80</width>
+		<height>80</height>
+		<category>life</category>
 	</item>
 
 </frame>

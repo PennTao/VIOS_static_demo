@@ -6,10 +6,11 @@ MyGraphicsView::MyGraphicsView(QWidget *parent) :
 
     backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt1.png"));
     backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt2.png"));
- //   backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt3.png"));
- //   backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt4.png"));
+    backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt3.png"));
+    backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt4.png"));
 
-
+    xRatio = (float)this->size().width() / (float)(*backgrounds.begin())->size().width();
+    yRatio = (float)this->size().height() / (float)(*backgrounds.begin())->size().height();
 
     bGroupEllipse = false;
     bGroupRect = false;
@@ -22,7 +23,7 @@ MyGraphicsView::MyGraphicsView(QWidget *parent) :
 }
 void MyGraphicsView::mousePressEvent(QMouseEvent *e)
 {
-    qDebug() << "pressed at  X: "<<e->pos().x() <<"    Y:" << e->pos().y();
+    qDebug() << "pressed at  X: "<<e->pos().x()/xRatio <<"    Y:" << e->pos().y()/yRatio;
     QRect curRect;
     QGraphicsScene *scene;
     m_lastPos = e->pos();
@@ -65,9 +66,10 @@ void MyGraphicsView::mousePressEvent(QMouseEvent *e)
 void MyGraphicsView::mouseReleaseEvent(QMouseEvent *e)
 {
 
-    qDebug() << "release at  X: "<<e->pos().x() <<"    Y:" << e->pos().y();
-    qDebug() << "View Rect: "<<this->rect().x()<<"  "<<this->rect().y()<<"  "<<this->rect().height()<<" "<<this->rect().width();
-    qDebug() << "SceneRect: "<<this->scene()->sceneRect().x()<<"    "<<this->scene()->sceneRect().y()<<"    "<<this->scene()->sceneRect().height()<<"   "<<this->scene()->sceneRect().width();
+//    qDebug() << "release at  X: "<<e->pos().x() <<"    Y:" << e->pos().y();
+    qDebug() << "release at  X: "<<e->pos().x() / xRatio <<"    Y:" << e->pos().y()/yRatio;
+//    qDebug() << "View Rect: "<<this->rect().x()<<"  "<<this->rect().y()<<"  "<<this->rect().height()<<" "<<this->rect().width();
+//    qDebug() << "SceneRect: "<<this->scene()->sceneRect().x()<<"    "<<this->scene()->sceneRect().y()<<"    "<<this->scene()->sceneRect().height()<<"   "<<this->scene()->sceneRect().width();
 
 
     QRect curRect;
@@ -227,6 +229,8 @@ void MyGraphicsView::mouseMoveEvent(QMouseEvent *e)
 
 void MyGraphicsView::resizeEvent(QResizeEvent *e)
 {
+    xRatio = (float)this->size().width() / (float)background->size().width();
+    yRatio = (float)this->size().height() / (float)background->size().height();
     DrawRect();
 }
 void MyGraphicsView::setRect(bool val)
@@ -278,7 +282,7 @@ void MyGraphicsView::DrawRect()
         scene->addPixmap(background->scaled(this->width(),this->height()));
         for(uint i = 0; i < items.size(); i++)
         {
-            scene->addRect(toRect(items[i]),QPen(QColor(255,0,0),6));
+            scene->addRect(toRect(items[i]),QPen(QColor(255,0,0),4));
         }
     }
 
@@ -292,7 +296,7 @@ QRect MyGraphicsView::toRect(QMap<QString, QString> item)
     y = item["y"];
     width = item["width"];
     height = item["height"];
-    return QRect(x.toInt(), y.toInt(),width.toInt(),height.toInt());
+    return QRect(x.toInt()* xRatio, y.toInt()* yRatio,width.toInt()* xRatio,height.toInt() * yRatio);
 }
 
 void MyGraphicsView::setParser(XMLDataParser *a)

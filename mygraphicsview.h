@@ -52,6 +52,7 @@ private:
     QPixmap *background;
     Frame* curFrame;
     QPoint m_lastPos;
+    float xRatio, yRatio;
     vector< pair<QRect, QString> > rects;
     vector< pair<QRect, QString> > ellipses;
     vector<QMap < QString,QString> > items;
