@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>tbbt1.png</file>
+        <file>tbbt2.png</file>
+        <file>tbbt3.png</file>
+        <file>tbbt4.png</file>
+    </qresource>
+    <qresource prefix="/xml">
+        <file>test.xml</file>
+    </qresource>
+</RCC>

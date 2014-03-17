@@ -23,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent) :
     canvas->setScene(scene);
 
     xmlparser = new XMLDataParser();
-    xmlparser->loadXML("/home/tao/VIOS_static_demo/test.xml");
+    xmlparser->loadXML(":/xml/test.xml");
     xmlparser->parseXML();
     canvas->setParser(xmlparser);
 
@@ -32,7 +32,7 @@ MainWindow::MainWindow(QWidget *parent) :
     timer->start();
     connect(timer, SIGNAL(timeout()), canvas, SLOT(ShowNextFrame()));
   //  item = new QGraphicsPixmapItem(QPixmap("/home/tao/Desktop/panda_AP.jpg").scaled(this->width(),this->height()));
-    scene->addPixmap(QPixmap("/home/tao/VIOS_static_demo/tbbt1.png").scaled(this->width(),this->height()));
+    scene->addPixmap(QPixmap(":/image/tbbt1.png").scaled(this->width(),this->height()));
 
     connect(GroupOne,SIGNAL(clicked()),canvas, SLOT(ToggleDrawRect()));
     connect(GroupTwo,SIGNAL(clicked()),timer, SLOT(stop()));

@@ -4,10 +4,10 @@ MyGraphicsView::MyGraphicsView(QWidget *parent) :
     QGraphicsView(parent)
 {
 
-    backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt1.png"));
-    backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt2.png"));
-    backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt3.png"));
-    backgrounds.push_back(new QPixmap("/home/tao/VIOS_static_demo/tbbt4.png"));
+    backgrounds.push_back(new QPixmap(":/image/tbbt1.png"));
+    backgrounds.push_back(new QPixmap(":/image/tbbt2.png"));
+    backgrounds.push_back(new QPixmap(":/image/tbbt3.png"));
+    backgrounds.push_back(new QPixmap(":/image/tbbt4.png"));
 
     xRatio = (float)this->size().width() / (float)(*backgrounds.begin())->size().width();
     yRatio = (float)this->size().height() / (float)(*backgrounds.begin())->size().height();
