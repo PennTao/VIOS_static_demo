@@ -134,7 +134,7 @@ void MyGraphicsView::clickHandler()
     for(uint i = 0; i < items.size(); i++)
     {
         curRect = toRect(items[i]);
-        curStr = QString::number(itrFramedata.key()) + " " + items[i]["name"] + "\n";
+        curStr =items[i]["name"] + "\n";
 
         if(curRect.contains(m_lastPos) && bDrawRect)
         {
@@ -249,14 +249,14 @@ void MyGraphicsView::ShowNextFrame()
     if(itrBackgrounds == backgrounds.end() || itrFramedata == framedata.end())
         return ;
 
-    itrBackgrounds++;
-    itrFramedata++;
-    if(itrBackgrounds == backgrounds.end() || itrFramedata == framedata.end())
-        return ;
     background = *itrBackgrounds;
     curFrame = *itrFramedata;
     items = curFrame->GetAll();
+    QString curStr =  QString::number(itrFramedata.key());
+    client->sendToServer( curStr);
     DrawRect();
+    itrBackgrounds++;
+    itrFramedata++;
 
 }
 
