@@ -4,6 +4,9 @@
         <file>tbbt2.png</file>
         <file>tbbt3.png</file>
         <file>tbbt4.png</file>
+        <file>tbbt5.jpg</file>
+        <file>tbbt6.jpg</file>
+        <file>tbbt7.jpg</file>
     </qresource>
     <qresource prefix="/xml">
         <file>test.xml</file>

@@ -38,9 +38,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(GroupTwo,SIGNAL(clicked()),timer, SLOT(stop()));
     connect(GroupThree, SIGNAL(clicked()),timer, SLOT(start()));
   //  connect(GroupThree,SIGNAL(clicked()),canvas, SLOT(DrawAll()));
-
     connect(canvas, SIGNAL(mouseClickEvent()), canvas, SLOT(clickHandler()));
     ui->top_Hlayout->addWidget(canvas);
+
 //    ui->horizontalLayout->addWidget(canvas);
 
 

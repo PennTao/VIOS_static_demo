@@ -6,6 +6,7 @@
 #include <vector>
 #include  <QWidget>
 #include  <QPushButton>
+#include <QTimer>
 #include "mygraphicsview.h"
 #include "mygraphicsscene.h"
 #include "xmldataparser.h"

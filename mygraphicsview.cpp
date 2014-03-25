@@ -8,6 +8,9 @@ MyGraphicsView::MyGraphicsView(QWidget *parent) :
     backgrounds.push_back(new QPixmap(":/image/tbbt2.png"));
     backgrounds.push_back(new QPixmap(":/image/tbbt3.png"));
     backgrounds.push_back(new QPixmap(":/image/tbbt4.png"));
+    backgrounds.push_back(new QPixmap(":/image/tbbt5.jpg"));
+    backgrounds.push_back(new QPixmap(":/image/tbbt6.jpg"));
+    backgrounds.push_back(new QPixmap(":/image/tbbt7.jpg"));
 
     xRatio = (float)this->size().width() / (float)(*backgrounds.begin())->size().width();
     yRatio = (float)this->size().height() / (float)(*backgrounds.begin())->size().height();
@@ -148,7 +151,9 @@ void MyGraphicsView::clickHandler()
 void MyGraphicsView::ToggleDrawRect()
 {
     bDrawRect = !bDrawRect;
+
     DrawRect();
+
 }
 void MyGraphicsView::mouseMoveEvent(QMouseEvent *e)
 {

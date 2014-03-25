@@ -60,7 +60,7 @@
 		<y>30</y>
 		<width>240</width>
 		<height>580</height>
-		<category>electronics</category>
+		<category>life</category>
 	</item>
 
 </frame>
@@ -88,6 +88,86 @@
 		<width>80</width>
 		<height>80</height>
 		<category>life</category>
+	</item>
+
+</frame>
+<frame num = "5">
+	<item>
+		<name>Bebe Yellow Vest Blouse</name>
+		<x>585</x>
+		<y>550</y>
+		<width>380</width>
+		<height>500</height>
+		<category>clothes</category>
+	</item>
+</frame>
+<frame num = "6">
+	<item>
+		<name>17 Base Pair DNA Model</name>
+		<x>333</x>
+		<y>54</y>
+		<width>80</width>
+		<height>490</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>EKTORP</name>
+		<x>1111</x>
+		<y>700</y>
+		<width>290</width>
+		<height>290</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>Leslie Dame Cabinet</name>
+		<x>1283</x>
+		<y>324</y>
+		<width>100</width>
+		<height>180</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>MORONI HAVANA 614 GROUP</name>
+		<x>6</x>
+		<y>700</y>
+		<width>600</width>
+		<height>200</height>
+		<category>life</category>
+	</item>
+
+</frame>
+<frame num = "7">
+	<item>
+		<name>batman</name>
+		<x>1350</x>
+		<y>570</y>
+		<width>50</width>
+		<height>120</height>
+		<category>decoration</category>
+	</item>
+	<item>
+		<name>Captain Future Poster</name>
+		<x>1</x>
+		<y>70</y>
+		<width>350</width>
+		<height>590</height>
+		<category>decoration</category>
+	</item>
+	<item>
+		<name>Justin Design Wall Light</name>
+		<x>410</x>
+		<y>250</y>
+		<width>100</width>
+		<height>200</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>SSSL Radio</name>
+		<x>1437</x>
+		<y>764</y>
+		<width>180</width>
+		<height>130</height>
+		<category>electronic</category>
 	</item>
 
 </frame>
