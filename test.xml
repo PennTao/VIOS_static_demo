@@ -35,6 +35,22 @@
 		<height>300</height>
 		<category>life</category>
 	</item>
+	<item>
+		<name>Lamp Shade</name>
+		<x>1517</x>
+		<y>21</y>
+		<width>400</width>
+		<height>300</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>Lamp</name>
+		<x>1744</x>
+		<y>446</y>
+		<width>120</width>
+		<height>400</height>
+		<category>life</category>
+	</item>
 
 </frame>
 <frame num = "3">
@@ -60,6 +76,22 @@
 		<y>30</y>
 		<width>240</width>
 		<height>580</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>EKTORP</name>
+		<x>1473</x>
+		<y>660</y>
+		<width>80</width>
+		<height>80</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>Lamp Shade</name>
+		<x>1</x>
+		<y>1</y>
+		<width>205</width>
+		<height>267</height>
 		<category>life</category>
 	</item>
 
@@ -114,8 +146,8 @@
 		<name>EKTORP</name>
 		<x>1111</x>
 		<y>700</y>
-		<width>290</width>
-		<height>290</height>
+		<width>240</width>
+		<height>240</height>
 		<category>life</category>
 	</item>
 	<item>
@@ -134,7 +166,22 @@
 		<height>200</height>
 		<category>life</category>
 	</item>
-
+	<item>
+		<name>Lamp Shade</name>
+		<x>516</x>
+		<y>360</y>
+		<width>190</width>
+		<height>190</height>
+		<category>life</category>
+	</item>
+	<item>
+		<name>Lamp</name>
+		<x>589</x>
+		<y>498</y>
+		<width>22</width>
+		<height>160</height>
+		<category>life</category>
+	</item>
 </frame>
 <frame num = "7">
 	<item>
@@ -169,6 +216,29 @@
 		<height>130</height>
 		<category>electronic</category>
 	</item>
-
+	<item>
+		<name>M-Audio Studiophile AV 40 Active Studio Monitor Speakers</name>
+		<x>1488</x>
+		<y>564</y>
+		<width>180</width>
+		<height>130</height>
+		<category>electronic</category>
+	</item>
+	<item>
+		<name>toys</name>
+		<x>1737</x>
+		<y>481</y>
+		<width>150</width>
+		<height>200</height>
+		<category>decoration</category>
+	</item>
+	<item>
+		<name>Whiteboard</name>
+		<x>1413</x>
+		<y>95</y>
+		<width>350</width>
+		<height>450</height>
+		<category>life</category>
+	</item>
 </frame>
 </framedata>
